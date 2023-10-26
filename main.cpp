@@ -14,8 +14,15 @@ int convertRomanToInt(string s);
 int countCharacter(string s);
 int main(void){
     int value;
+    string input;
     
-    
+    while(true){
+        cout << "Enter Roman number or Q to quit: ";
+        cin >> input;
+        if(input == "Q") break;
+        value = convertRomanToInt(input);
+        cout << input << " = " << value << endl;
+    }
     
 }
 
